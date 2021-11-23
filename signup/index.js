@@ -1,6 +1,7 @@
 const username =  document.querySelector(".username")
 const email =  document.querySelector(".email")
 const password =  document.querySelector(".password")
+const fullname =  document.querySelector(".fullname")
 const btn = document.querySelector(".upbtn")
 btn.addEventListener("click",(e)=>{
     e.preventDefault()
@@ -14,6 +15,10 @@ btn.addEventListener("click",(e)=>{
     }
     if (password.value == ""){
         alert("You have to fill in the password section and also ")
+       
+    }
+    if (fullname.value == ""){
+        alert("You have to fill in the FullName section")
        
     }
     if (password.value.length > "8"){
